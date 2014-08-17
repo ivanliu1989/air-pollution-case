@@ -31,3 +31,5 @@ mean(is.na(x1)) # proportion of missing value
 
 boxplot(x0,x1)
 boxplot(log10(x0),log10(x1))
+
+negative <- 
