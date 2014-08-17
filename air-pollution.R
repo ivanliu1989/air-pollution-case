@@ -12,4 +12,18 @@ cnames
 cnames <- strsplit(cnames, "|", fixed=T)
 names(pm0)<- make.names(cnames[[1]]) # make column names valid
 
-x0 <-
+x0 <- pm0$Sample.Value
+class(x0)
+str(x0)
+summary(x0)
+mean(is.na(x0))
+
+pm1 <- read.table(pm25.list[2], comment.char = "#", header = F, na.strings = "", sep="|")
+dim(pm1)
+names(pm1)<-make.names(cnames[[1]])
+head(pm1)
+
+x1 <- pm1$Sample.Value
+str(x1)
+summary(x1)
+summary(x0)
