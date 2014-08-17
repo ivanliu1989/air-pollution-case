@@ -27,3 +27,7 @@ x1 <- pm1$Sample.Value
 str(x1)
 summary(x1)
 summary(x0)
+mean(is.na(x1)) # proportion of missing value
+
+boxplot(x0,x1)
+boxplot(log10(x0),log10(x1))
